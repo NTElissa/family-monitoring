@@ -1,0 +1,147 @@
+body,
+h1,
+h2,
+ul,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.containerAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.head-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.all-side {
+  display: flex;
+  /* flex-direction: column; */
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.set-budget-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.set-budget-button:hover {
+  background-color: #0056b3;
+}
+
+.left-side {
+  padding: 100px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+.right-side {
+  padding: 100px;
+  margin: 10px;
+  background-color: #f8b205;
+  border-radius: 5px;
+}
+body, h1, h2, h3, p, ul, li, table, th, td {
+  margin: 0;
+  padding: 0;
+}.display-budget {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+}td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for delete button */
+.delete-button:hover {
+  background-color: #c82333;
+}.RemaingBudget{
+  background-color: #f8b205;
+  box-shadow:  rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 100px;
+  margin-top: 150px;
+}.RemaingBudget label{
+ margin-left: 20px;
+ color:#f0f0f0;
+}label.dataRemaining{
+ color: #0056b3;
+ font-size: x-large;
+}
+
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .all-side {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    margin: 5px;
+    padding: 10px;
+  }
+}

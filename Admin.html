@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>family expenses monitoring system</title>
+    <link rel="icon" href="/images/familyIcon.png" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body onload="adminHome()">
+    <nav>
+      <div class="logo-name">
+        <div class="logo-image">
+          <!--<img src="images/logo.png" alt="">-->
+        </div>
+      </div>
+      <div class="menu-items">
+        <ul class="nav-links">
+          <li>
+            <a href="#">
+              <i class="uil uil-estate"></i>
+              <span class="link-name">Dahsboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="user.html">
+              <i class="uil uil-files-landscapes"></i>
+              <span class="link-name">My Family</span>
+            </a>
+          </li>
+          <li>
+            <a href="user.income.expense.html">
+              <i class="uil uil-files-landscapes"></i>
+              <span class="link-name">Action</span>
+            </a>
+          </li>
+          <li>
+            <a href="budget.html">
+              <i class="uil uil-chart"></i>
+              <span class="link-name">Budget</span>
+            </a>
+          </li>
+          <li>
+            <a href="message.html">
+              <i class="uil uil-thumbs-up"></i>
+              <span class="link-name">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="uil uil-comments"></i>
+              <span class="link-name">Project</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="logout-mode">
+          <li>
+            <a href="login.html">
+              <i class="uil uil-signout"></i>
+              <span class="link-name">Logout</span>
+            </a>
+          </li>
+          <li class="mode">
+            <a href="#">
+              <i class="uil uil-moon"></i>
+              <span class="link-name">Dark Mode</span>
+            </a>
+            <div class="mode-toggle">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="dashboard">
+      <div class="top">
+        <i class="uil uil-bars sidebar-toggle"></i>
+        <div class="search-box">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+        <!--<img src="images/profile.jpg" alt="">-->
+        <img src="/images/imagesB.png" alt="">
+      </div>
+      <div class="dash-content">
+        <div class="overview">
+          <div class="title">
+            <i class="uil uil-tachometer-fast-alt"></i>
+            <span class="text">Dashboard</span>
+          </div>
+          <div class="boxes" id="boxesData">
+            <!-- <div class="box box1" id="numberOne">
+              <i class="uil uil-thumbs-up"></i>
+              <span class="text">Income</span>
+              <span class="number" >50,120 Rwf</span>
+            </div>
+            <div class="box box2">
+              <i class="uil uil-comments"></i>
+              <span class="text">Expance</span>
+              <span class="number" id="numberTwo">20,120 Rwf</span>
+            </div>
+            <div class="box box3">
+              <i class="uil uil-share"></i>
+              <span class="text">Balance</span>
+              <span class="number" id="numberThree">10,120 Rwf</span>
+            </div> -->
+            <div  onload="balance()" class="box-box3"></div>
+          </div>
+        </div>
+        <div class="activity">
+          <div class="title">
+            <i class="uil uil-clock-three"></i>
+            <span class="text">Recent Activity</span>
+          </div>
+          <!-- Add this HTML code to display the table -->
+          <div class="activity-data">
+            <table class="income-table" border="1">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Category</th>
+                  <th>Amount</th>
+                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Balance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Example data rows -->
+                <tr>
+                  <td>John Doe</td>
+                  <td>Groceries</td>
+                  <td>$50.00</td>
+                  <td>Weekly grocery shopping</td>
+                  <td>2023-08-01</td>
+                  <td>$1,000.00</td>
+                </tr>
+                <tr>
+                  <td>Alice Smith</td>
+                  <td>Entertainment</td>
+                  <td>$20.00</td>
+                  <td>Movie night</td>
+                  <td>2023-08-03</td>
+                  <td>$800.00</td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Combine the script elements into one -->
+    <script src="/script/get.income.expence.js"></script>
+    <script src="/script/get.balance.admin.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/getAllIncomes.admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Expenses Monitoring System</title>
+  <link rel="icon" href="/images/familyIcon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/user.income.expense.css">
+</head>
+<body>
+  <div class="container">
+ 
+    <div class="left-side">
+      <a href="/Admin.html">
+        <div class="back-home"><img src="/images/back.png"></div>
+      </a>
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="all-users">
+          <!-- User data will be inserted here by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+    <div class="right-side">
+      <div class="description-text">
+        <h2>Welcome to the Family Expenses Monitoring System</h2>
+        <p>
+          <ul>Add Your Income: Easily record what money you earn—salary, allowances, or any source.</ul>
+          <ul>Track Expenses: Keep tabs on spending, like school fees, bills, and entertainment.</ul>
+        </p>
+        <div class="activity-data">
+          <table class="income-expense-table" border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data will be inserted here by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/script/user.income.expense.js"></script>
+</body>
+</html>

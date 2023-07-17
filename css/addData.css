@@ -1,0 +1,80 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+}
+
+.form-container form {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-container form#expenseForm {
+  background-color: #ffcbcb; /* Expense form color */
+}
+
+.form-container form#incomeForm {
+  background-color: #c9ffc9; /* Income form color */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  font-size: 12px; /* Reduced size of select option */
+  border-radius: 3px;
+  margin: 5px 0; /* Increased margin between select and other elements */
+}
+
+label,
+input,
+button {
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}

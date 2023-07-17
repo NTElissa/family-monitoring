@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Update</title>
+  <link rel="icon" href="/images/familyIcon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/css/update-profile.css">
+</head>
+<body onload="getUpdate()">
+  <div id="form-container">
+    <form id="update-form">
+      <div class="form-column">
+        <div class="form-field">
+          <label for="user-Firstname"><i class="fas fa-user"></i> First Name:</label>
+          <input type="text" id="user-Firstname" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-lastname"><i class="fas fa-user"></i> Last Name:</label>
+          <input type="text" id="user-lastname" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-nickname"><i class="fas fa-user"></i> Nickname:</label>
+          <input type="text" id="user-nickname" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-image"><i class="fas fa-image"></i> Image URL:</label>
+          <input type="text" id="user-image" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-phonenumber"><i class="fas fa-phone"></i> Phone Number:</label>
+          <input type="text" id="user-phonenumber" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-job"><i class="fas fa-briefcase"></i> Job:</label>
+          <input type="text" id="user-job" required>
+        </div>
+      </div>
+
+      <div class="form-column">
+        <div class="form-field">
+          <label for="user-positionId"><i class="fas fa-id-card"></i> Position ID:</label>
+          <input type="text" id="user-positionId" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-otherFields"><i class="fas fa-list"></i> Other Fields:</label>
+          <input type="text" id="user-otherFields" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-position"><i class="fas fa-suitcase"></i> Position:</label>
+          <input type="text" id="user-position" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-location"><i class="fas fa-map-marker-alt"></i> Location:</label>
+          <input type="text" id="user-location" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-password"><i class="fas fa-lock"></i> Password:</label>
+          <input type="password" id="user-password" required>
+        </div>
+
+        <div class="form-field">
+          <label for="user-confirm_password"><i class="fas fa-lock"></i> Confirm Password:</label>
+          <input type="password" id="user-confirm_password" required>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-fieldBTN">
+        <button type="submit">Update Profile</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/script/update-profile.js"></script>
+</body>
+</html>

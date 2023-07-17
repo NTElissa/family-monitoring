@@ -1,0 +1,145 @@
+.container{
+  display:flex;
+}
+.user-table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 3px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+}
+
+/* User Image Styles */
+.user-image {
+  max-width: 50px;
+  max-height: 50px;
+  vertical-align: middle;
+}
+
+/* Action Button Styles */
+.income-btn{
+  padding: 5px 5px;
+  background-color:#31a802;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 7px;
+}
+.expense-btn {
+  padding: 5px 5px;
+  background-color:#a82302;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 7px;
+}
+
+.income-btn:hover{
+  background-color: #0d5c03; 
+  
+}
+.expense-btn:hover {
+  background-color: #770303;
+}
+
+/* Back Home Button Styles */
+.back-home {
+  text-align: center;
+  margin: 20px;
+}
+
+.back-home img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Left Side (Table) */
+.left-side {
+  float: left;
+  width: 60%;
+  padding: 5px;
+  margin-left:10px
+}
+/* Apply styles to the entire table */
+.income-expense-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style the table header */
+.income-expense-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+/* Style the table rows */
+.income-expense-table tr {
+  border: 1px solid #dddddd;
+}
+
+/* Style alternating rows with a different background color */
+.income-expense-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.income-expense-table td {
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+.income-expense-table .action {
+  text-align: center;
+}
+
+.income-expense-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .left-side, .right-side {
+    width: 100%; 
+    padding: 10px;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 5px; 
+  }
+
+  /* Add CSS for small screens here */
+
+  .user-image {
+    max-width: 30px; /* Adjust image size for mobile */
+    max-height: 30px;
+  }
+
+  .income-btn, .expense-btn {
+    padding: 3px 3px; /* Adjust button padding for mobile */
+    font-size: 12px; /* Reduce font size for mobile */
+  }
+
+  .back-home img {
+    width: 20px; /* Adjust back button image size for mobile */
+    height: 20px;
+  }
+
+  /* Modify other styles as needed for mobile responsiveness */
+}
+

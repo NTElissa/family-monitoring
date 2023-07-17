@@ -1,0 +1,75 @@
+/* CSS for the User Profile Update form */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+#form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top:80px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-field label i {
+  margin-right: 10px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}.form-fieldBTN{
+  margin-top: 373px;
+}
+
+button[type="submit"] {
+  background-color: #f8b205;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #966c03;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  .form-column {
+    width: 100%;
+  }.form-fieldBTN{
+    margin-top: 15px;
+  }
+}
